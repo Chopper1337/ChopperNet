@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gran Turismo 5 LAN Mode</title>
+    <style>
+        body {background-color: black;}
+        a,p,h1,h2,h3,li {color: white;font-family: "Segoe UI"}
+        a.link {color: red}
+        a.important, p.important {color: #00FF00}
+    </style>
+</head>
+<body>
+<h1 style="text-align: center">Gran Turismo 5 LAN Mode Tutorial</h1>
+<h3 style="text-align: center">Please read this fully at least once before starting!</h3>
+<p class="important">Note: All links will be in red text.<br>
+    Green text is for important stuff<br>
+    <br></p>
+    <a class="link" href="https://discord.gg/JVuDd6J" target="_blank">Join the GT5 Online Services Discord</a>
+<h2>Requirements:</h2>
+<ol type="circle">
+    <li>PS3 with CFW</li>
+    <li>Gran Turismo 5</li>
+    <li>Hex Editor such as <a class="link" href="https://mh-nexus.de/en/hxd/" target="_blank">HxD</a> (Optional for BCES00569 games)</li>
+    <li><a class="link" href="http://psx-scene.com/forums/f180/gt5-garage-editor-slim355-q-k-113178/" target="_blank">GT5 Garage Editor</a></li>
+    <li><a class="link" href="https://www.psx-place.com/resources/trueancestor-self-resigner-by-jjkkyu.33/" target="_blank">TrueAncestor SELF Resigner</a> (Optional for BCES00569 games)</li>
+    <li><a class="link" href="https://www.psx-place.com/threads/ps3-game-updates-ps3-psp-ps-vita-by-aldostools.334/" target="_blank">PS3 Game Updater</a> or <a class="link" href="https://mega.nz/#!qccRWCpI!tppFhUlirtLjzyuFMH7ZcZNWvaNyXd9lAm9EKqATNa8" target="_blank">PSN Stuff</a></li>
+</ol>
+<h2>GT5 Version:</h2>
+<p>First you'll need to have GT5 on the correct version (<a class="important">2.11</a>). So check the version you're currently on in the XMB.<br>
+If you're on a version lower than 2.11, just download the PKG's for the updates from your version to 2.11.<br>
+If you're on a newer version than 2.11, delete the updates (Unfortunately you have to delete them all) and download all updates to 2.11.<br>
+These packages can be downloaded using PS3 Game Updater, PSN Stuff or any other application which lets you download from Sony's CDN.<br>
+<a class="link" href="updates.html" target="_blank">Direct Links</a> </p>
+<h2>Save Game:</h2>
+<p>So now you're on 2.11, make a backup of your old saves if they're worth anything to you, then delete them from the PS3. (You can try keeping the older save, it might work. A newer one is less likely to work but I haven't tested)<br>
+Start the game and do a few of the Licenses (I done the first 3/4 to reach level 1) then save the game and quit.<br>
+Either through FTP or using a USB, copy your new save game from your PS3 to your PC.<br>
+    Download the GT5 Garage Editor and open your save game. <a class="important">Enable the "Secret Menu" option</a> as in the screenshot and press apply.<br>
+    You can also add cars or money to your save now, I recommend you do both, boot the game up with the modified save and buy everything you'd want to use in LAN. See the note above the screenshot.
+Save the file and copy the save back to your PS3<br><br>
+NOTE: You will not be able to buy any cars when using the modified EBOOT, so please add any cars you would want or add lots of money and buy the cars in game and modify them to your liking BEFORE replacing the EBOOT.<br><br></p>
+<a href="GarageEditor.PNG" target="_blank">
+<img src="GarageEditor.PNG" width="20%">
+</a>
+<br>
+<h2>EBOOT.BIN:</h2>
+<p>This is where the optional steps come in. If you're game is BCES00569 (Refer to the spine of the game's case or the name of the folder your save game)<br>
+You can download the EBOOT.BIN I have already modified here: <a class="link" href="https://chopperhook.xyz/GT5LAN/EBOOT.zip">Here</a> (Mirror: <a class="link" href="https://mega.nz/#!vRd3WCjB!a8ghQVL7TsYfsstde-Al0ikWowNA3JjEMjBMWmkiFBQ" target="_blank">MEGA</a>)<br>
+    You can skip to "Final Steps"
+    <br>
+<br>
+    For those who don't use that specific EU copy of the game or just want to modify the file yourself, do the following:
+</p>
+<ol>
+    <li>Copy the GT5 EBOOT.BIN to your PC (Use FTP, Multiman or a PS3 file manager) Don't forget to create a backup of this file!</li>
+    <li>Place the EBOOT.BIN in the TrueAncestor SELF Resigner folder (Same folder as resigner.exe)</li>
+    <li>Open resigner.exe, press 1 and then press enter. This decrypts the BIN file and creates an ELF file</li>
+    <li>Open the ELF file in a Hex editor such as HxD, do find (search) for the text string "gt5", press "Find next" (F3) until you reach line that contains <a class="important">"gt5......VersionBranch"</a> as in the screenshot:<br>
+    <a href="HEX.PNG" target="_blank">
+    <img src="HEX.PNG" width="50%"></a></li>
+    <li>Highlight "gt5" in this line and type demo over it, it should look similar enough to this:<br>
+    <a href="HEX.PNG" target="_blank"><img src="HEX2.PNG" width="50%"></a></li>
+    <li>Save that file (the "demo" text should turn black) and close HxD.</li>
+    <li>Now copy this modified EBOOT.ELF into the "tools" folder within the TrueAncestor SELF Resigner folder</li>
+    <li>Hold shift and right click in an empty space in the tools folder and choose "Open Powershell window here" or "Open CMD window here"</li>
+    <li>Enter this command and press enter: <a class="important"> make_fself EBOOT.ELF EBOOT.BIN</a></li>
+    <li>This should create an EBOOT.BIN file in the tools folder, copy that file to the PS3, replacing the original one</li>
+</ol>
+<h2>Final Steps:</h2>
+<p>Once everything is set up, you can start GT5. You will be asked to update, just press circle to cancel it (Don't update!)<br>
+Say no to the PSN sign in prompt and go to the settings menu, scroll to the very bottom and there should be a "Secret" menu<br>
+Go to the second option "Toggle Display", untick "Photo Travel" and tick "label_lounge".<br>
+Press ok and exit the options menu, saying no to the PSN prompts.<br>
+Select "Online Race" and a sub menu should appear with the "LAN Battle" option. Enjoy!<br><br>
+You can try using a virtual LAN network such as XLine Kai, It is said to work but I personally have not tested it.</p>
+</body>
+</html>
