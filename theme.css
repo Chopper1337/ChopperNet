@@ -1,0 +1,51 @@
+body{
+    background-color: black
+}
+a,p,h1,h2,tr,th,td {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+:hover {
+    color:#00FF00
+}
+
+div{
+    text-align: center
+}
+
+div.sites{
+    text-align: center;
+    font-size: 42px;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 10px;
+    color: #171717;
+    font-size: 5px;
+}
+
+.blink_text {animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+    color: red;}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }}
