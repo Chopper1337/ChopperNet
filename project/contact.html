@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<iframe src="navbar.html" scrolling="0" width="100%" frameBorder="0"></iframe>
+
+<!-- "Go to top" button -->
+<button onclick="window.location.href = 'contact.html';" id="myBtn" title="Go to top">Go to top</button>
+
+<!-- "Contact Us" image -->
+<div align="center">
+<img src="contact.jpg" width="30%">
+</div>
+
+<p>
+
+</p>
+
+<!-- Contact Form -->
+<form name="input" action="html_form_action.asp" method="get">
+    <p>Name:
+        <input type="text" name="name">
+        <br>
+    Email: <input type="email" name="email">
+<br>
+    GDPR Consent
+        <input type="checkbox" name="gdpr">
+    <br><br>
+        Your message:
+    <br>
+    <textarea rows="5" cols="50" spellcheck="true" name="msg"> </textarea>
+        <br><br>
+        Department:<br>
+    <input type="radio" name="dept" value="s" > Sales <br>
+    <input type="radio" name="dept" value="cs" > Customer Services <br>
+    <input type="radio" name="dept" value="it" > I.T Department <br>
+        <br>
+        How would you categorise the priority of this message?
+    <select> <option value="low" name="nrml">Normal</option>
+            <option value="med" name="anrml">Above Normal</option>
+          <option value="high" name="high">High</option>
+         <option value="critical" name="critical">Critical</option>
+    </select>
+        <br>
+        Verification Code for "high" and "critical" priority messages:
+        <input type="password" name="verify">
+        <br><br>
+        <input type="reset" value="Reset" />
+    <input type="submit" NAME="action" value="Send"></input> </p>
+</form>
+
+</body>
+</html>

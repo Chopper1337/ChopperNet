@@ -1,0 +1,229 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>IP address classes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<link rel="Stylesheet" href="style.css" type="text/css"/>
+
+</head>
+<body>
+
+
+	<h2 align="center">IP address classes</h2>
+	<p>
+	<table border="1" align="center">
+		<tr>
+			<th>Class</th>
+			<th>1<sup>st</sup> Octet Decimal Range</th>
+			<th>1<sup>st</sup> Octet High Order Bits</th>
+			<th>Network/Host ID (N=Network, H=Host)</th>
+			<th>Default Subnet Mask</th>
+			<th>Number of Networks</th>
+			<th>Hosts per Network (Usable Addresses)</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>1 – 126*</td>
+			<td>0</td>
+			<td>N.H.H.H</td>
+			<td>255.0.0.0</td>
+			<td>126 (2<sup>7</sup> – 2)</td>
+			<td>16,777,214 (2<sup>24</sup> – 2)</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>128 – 191</td>
+			<td>10</td>
+			<td>N.N.H.H</td>
+			<td>255.255.0.0</td>
+			<td>16,382 (2<sup>14</sup> – 2)</td>
+			<td>65,534 (2<sup>16</sup> – 2)</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>192 – 223</td>
+			<td>110</td>
+			<td>N.N.N.H</td>
+			<td>255.255.255.0</td>
+			<td>2,097,150 (2<sup>21</sup> – 2)</td>
+			<td>254 (2<sup>8</sup> – 2)</td>
+		</tr>
+		<tr>
+			<td>D</td>
+			<td>224 – 239</td>
+			<td>1110</td>
+			<td colspan="4">Reserved for Multicasting</td>
+		</tr>
+		<tr>
+			<td>E</td>
+			<td>240 – 254</td>
+			<td>1111</td>
+			<td colspan="4">Experimental; used for research</td>
+		</tr>
+		
+	</table>
+	<p align="center"><b>Note:</b> Class A addresses 127.0.0.0 to 127.255.255.255 cannot be used and is reserved for loopback and diagnostic functions.</p>
+	
+	<h2 align="center">Private IP Addresses</h2>
+	<table border="1" align="center">
+		<tr>
+			<th>Class</th>
+			<th>Private Networks</th>
+			<th>Subnet Mask</th>
+			<th>Address Range</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>10.0.0.0</td>
+			<td>255.0.0.0</td>
+			<td>10.0.0.0 - 10.255.255.255</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>172.16.0.0 - 172.31.0.0</td>
+			<td>255.240.0.0</td>
+			<td>172.16.0.0 - 172.31.255.255</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>192.168.0.0</td>
+			<td>255.255.0.0</td>
+			<td>192.168.0.0 - 192.168.255.255</td>
+		</tr>
+		
+		
+	</table>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-395459-1";
+urchinTracker();
+</script>
+<br>
+<br>
+<br>
+<br>
+<div align="center" style="font-size:60%">
+Hosted at <a href="http://1337.web44.net" target="_blank">1337.web44.net</a></div>
+
+<h2>IP: 192.168.2.32/28</h2>
+<br>
+<br>
+<p>What is the valid range of hosts?
+<br>
+<br>
+First determine the class of the IP:
+<br>
+<br>
+Class A: 1-126
+<br>
+Class B: 128-191
+<br>
+Class C: 192-223
+<br>
+Class D: 224-239
+<br>
+Class E: 240-254
+<br>
+<br>
+<br>
+These ranges are in relation to the first octet of the IP, which in this case is "192".
+<br>
+That makes this a Class C address.
+<br>
+<br>
+Now determine the class-full subnet of the IP:
+<br>
+<br>
+Class A: 255.0.0.0
+<br>
+Class B: 255.255.0.0
+<br>
+Class C: 255.255.255.0
+<br>
+Class D: [RESERVED FOR MULTICASTING]
+<br>
+Class E: [EXPERIMENTAL; USED FOR RESEARCH]
+<br>
+<br>
+<br>
+As we have a Class C address, the class-full subnet is 255.255.255.0
+<br>
+but CIDR notation shows that this IP is classless.
+<br>
+In this case, we have more than 24 bits assigned for networks, 4 more bits have been added.
+<br>
+<br>
+<br>
+28 shows there are 28 1's in the subnet mask's binary
+<br>
+Here is the subnet mask's binary: 11111111111111111111111111110000
+<br>
+divided into octets: 11111111.11111111.1111111111.11110000
+<br>
+<br>
+<br>
+To get the last number in the subnet mask, consider each "1" in the subnet mask binary to be the following:
+<br>
+128 64 32 16 8 4 2 1
+<br>
+<br>
+In the missing part of the subnet mask, we have the binary 11110000:
+<br>
+<br>
+1	  1	   1	 1	  0	  0	  0	  0
+128   64   32	 16	  8	  4	  2	  1
+<br>
+<br>
+Now add the numbers which have a "1" above them,
+<br>
+<br>
+128+64+32+16= 240
+<br>
+<br>
+This results in the last number for the classless subnet mask:
+<br>
+<br>
+255.255.255.240
+<br>
+<br>
+Taking away 240 from 256 gives us the number of subnets
+<br>
+<br>
+256-240= 16
+<br>
+<br>
+Dividing the number of subnets bu 256 gives us the range of hosts for each subnet:
+<br>
+<br>
+256/16= 16
+<br>
+<br>
+Then count up in 16's til you reach 256
+<br>
+<br>
+16 - 32 - 48 - 64 - 80 - 96 - 112 - 128 - 144 - 160 - 176 - 192 - 208 - 224 - 240 - 256
+<br>
+<br>
+These divisions are the ranges of hosts for all 16 subnets.
+<br>
+<br>
+Going back to the IP, 192.168.2.32, it exists here:
+<br>
+<br>
+16 - 32 - 48 - 64...
+     ^-----^
+<br>
+<br>
+32 and 48 are subnet identifiers which cannot be assigned as IP's, that means 192.168.2.33 is the first IP in this range.
+<br>
+192.168.2.47 is therefore the broadcast address for this subnet.
+<br>
+<br>
+Therefore this is the valid range of IP's for this subnet:
+<br>
+192.168.2.33 to 192.168.2.46</p>
+</body>
+</html>

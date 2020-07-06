@@ -1,0 +1,79 @@
+body{
+    background-size: 100%;
+    background-image: url("background.jpg");
+    background-repeat: repeat;
+    background-color: blue;
+}
+
+a,p,label{
+    font-size: 20px;
+    font-family: "Lucida Sans";
+}
+
+p, label{
+    color: white;
+    text-shadow: 2px 2px 1px black
+}
+
+
+a:hover{
+    color: #2F93FF;
+}
+
+h1.title{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px blue;
+    font-family: Impact;
+    width: 100%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+iframe{
+    scrolling:no;
+    scrolling:0;
+    frameborder:0;
+    seamless:seamless;
+}
+
+.navbar{
+    width: 100%;;
+    background-color: white;
+    opacity: 75%;
+}
+
+.navlink {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imagetablegpu{
+     background-color: yellow;
+     border-color: #2f93ff #2526ff;
+     border-width: 20px;
+     border-style: groove;
+     padding: 10px;
+     margin: 80px;
+ }
+
+.imagetablehdd {
+    background-color: grey;
+    border-color: blue;
+    border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    position: fixed;
+    left: 48%;
+    bottom: 0%;
+}
+
+.audio{
+    position: absolute;
+    right: 42%;
+    left: 42%;
+}
