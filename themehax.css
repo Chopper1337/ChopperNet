@@ -58,6 +58,10 @@ div{
     font-size: 24px;
 }
 
+.big{
+    font-size: 72px;
+}
+
 .blink_text {animation:1s blinker linear infinite;
     -webkit-animation:1s blinker linear infinite;
     -moz-animation:1s blinker linear infinite;
