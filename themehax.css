@@ -63,7 +63,7 @@ div{
     color: white;
     font-family: sans-serif;
     font-style: italic;
-    text-align: center
+    text-align: center;
 }
 
 .blink_text {animation:1s blinker linear infinite;
