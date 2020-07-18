@@ -60,6 +60,10 @@ div{
 
 .big{
     font-size: 84px;
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center
 }
 
 .blink_text {animation:1s blinker linear infinite;
