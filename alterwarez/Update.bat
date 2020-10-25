@@ -1,4 +1,4 @@
 start AlterWarezUpdater.exe
 pause
-git commit -a
+git commit -a -m "Automatically updated"
 pause
