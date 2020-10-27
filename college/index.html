@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="../lite.css">
     <link rel="icon" href="../favgif.gif" type="image/gif" >
     <link rel="logo" href="../favgif.gif" type="image/gif" >
+    <style>
+        .spoilerbutton {display:block; border:none; padding: 0px 0px; margin:10px 0px; color:#000000;color: white; background-color:transparent; outline:0;font-family: monospace;}
+        .spoiler {overflow:hidden;}
+        .spoiler > div {-webkit-transition: all 0s ease;-moz-transition: margin 0s ease;-o-transition: all 0s ease;transition: margin 0s ease;}
+        .spoilerbutton[value="END OF LINE"] + .spoiler > div {margin-top:-500%;}
+        .spoilerbutton[value="END OF LINE"] + .spoiler {padding:5px;}
+    </style>
 </head>
 <body>
 <p>Welcome to <a href="https://chopperhook.xyz/college">ChopperHook.xyz/college</a>.</p>
@@ -52,6 +59,52 @@
 	<img src="timetable.jpg">
 </div>
 <br>
-<a style="color:white" href="stufftodo.html" target="_blank">END OF LINE</a>
+<!-- END OF LINE -->
+<input class="spoilerbutton" type="button" value="END OF LINE" onclick="this.value=this.value=='END OF LINE'?'NOT END OF LINE?':'END OF LINE';">
+<div class="spoiler"><div>
+    <table class="tg">
+        <thead>
+        <tr>
+            <th class="tg-0pky">Subject</th>
+            <th class="tg-0pky">Task</th>
+            <th class="tg-0pky">Due</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tg-0pky">CompSys</td>
+            <td class="tg-0pky">Finish labs</td>
+            <td class="tg-0pky">ASAP</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Design Thinking</td>
+            <td class="tg-0pky">Interview screenshots</td>
+            <td class="tg-0pky">Wednesday</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Personal Development</td>
+            <td class="tg-0pky">Presentation 1 (20%)</td>
+            <td class="tg-0pky">2nd November to 6th November</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Maths</td>
+            <td class="tg-0pky">-</td>
+            <td class="tg-0pky">-</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Programming</td>
+            <td class="tg-0pky">-</td>
+            <td class="tg-0pky">-</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Other</td>
+            <td class="tg-0pky">-</td>
+            <td class="tg-0pky">-</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
 </body>
 </html>
