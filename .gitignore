@@ -4,3 +4,6 @@
 lite.css~
 ip/.index.html.un~
 ip/index.html~
+*.swp
+*.un~
+*.html~
