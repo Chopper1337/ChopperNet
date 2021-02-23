@@ -1,2 +1,2 @@
 # ChopperNet
-Source for my website, <a href="https://chopperhook.xyz">chopperhook.xyz</a>
+Source for a website, <a href="https://chopperhook.xyz">chopperhook.xyz</a>
