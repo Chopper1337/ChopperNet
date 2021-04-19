@@ -1,6 +1,10 @@
+body{
+	background-color:black;
+    font-family: sans-serif;
+}
+
 h1,h2,h3,a,p{
     color: white;
-    font-family: sans-serif;
     font-style: italic;
     text-align: center
 }
@@ -22,6 +26,11 @@ h1,h2,h3,a,p{
     margin-right: auto;
 }
 
+.navBarHax{
+	border:0;
+	width:100%;
+}
+
 :hover {
     color:#00FF00
 }
@@ -31,11 +40,16 @@ h1,h2,h3,a,p{
     color: #171717;
     font-size: 5px;
 }
-.bottom2 {
+#bottom2 {
     text-align: center;
     position: relative;
     bottom: 0px;
     font-size: 15px;
+}
+
+#landingPageDiv{
+	text-align: center;
+	font-size: 30px;	
 }
 
 a {
