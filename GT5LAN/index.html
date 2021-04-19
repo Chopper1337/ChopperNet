@@ -16,7 +16,7 @@
 
 	<p class="important" style="text-align:center">THE EBOOT METHOD IS CONSIDERED OBSOLETE, IT IS ADVISED YOU JOIN THE GT ONLINE/MODDING COMMUNITY DISCORD AND FOLLOW THE GUIDE WRITTEN BY NENKAI<br><br>
 	<a class="link" href="https://discord.gg/rUVRq2Dree" target="_blank">GT Online/Modding Community Discord</a><br><a class="link" href="https://gist.github.com/Nenkai/f46bdce07c4ee019c57494319b292b30"  target="_blank">Nenkai's Guide</a><br><br>Have fun :)<br><br>
-	---> Everything beyond this point is kept for archival purposes. <--- <br>Guide created 27/06/2020 by Chopper</p>
+	---&gt; Everything beyond this point is kept for archival purposes. &lt;--- <br>Guide created 27/06/2020 by Chopper</p>
 	<hr>
 	<p class="important">Note: All links will be in red text.<br>
     Green text is for important stuff.<br>
@@ -46,7 +46,7 @@ Either through FTP or using a USB, copy your new save game from your PS3 to your
 Save the file and copy the save back to your PS3<br><br>
 NOTE: You will not be able to buy any cars when using the modified EBOOT, so please add any cars you would want or add lots of money and buy the cars in game and modify them to your liking BEFORE replacing the EBOOT.<br><br></p>
 <a href="GarageEditor.PNG" target="_blank">
-<img src="GarageEditor.PNG" width="20%">
+<img src="GarageEditor.PNG" alt="Screenshot of the GT5 Garage Editor">
 </a>
 <br>
 <h2>EBOOT.BIN:</h2>
@@ -62,10 +62,10 @@ You can download the EBOOT.BIN I have already modified here: <a class="link" hre
     <li>Place the EBOOT.BIN in the TrueAncestor SELF Resigner folder (Same folder as resigner.exe)</li>
     <li>Open resigner.exe, press 1 and then press enter. This decrypts the BIN file and creates an ELF file</li>
     <li>Open the ELF file in a Hex editor such as HxD, do find (search) for the text string "gt5", press "Find next" (F3) until you reach line that contains <a class="important">"gt5......VersionBranch"</a> as in the screenshot:<br>
-    <a href="HEX.PNG" target="_blank">
-    <img src="HEX.PNG" width="50%"></a></li>
+    <a href="HEX.PNG" target="_blank" alt="Screenshot of the string of characters to find">
+    <img src="HEX.PNG"></a></li>
     <li>Highlight "gt5" in this line and type demo over it, it should look similar enough to this:<br>
-    <a href="HEX2.PNG" target="_blank"><img src="HEX2.PNG" width="50%"></a></li>
+    <a href="HEX2.PNG" target="_blank"><img src="HEX2.PNG" alt="Screenshot of the string of characters changed"></a></li>
     <li>Save that file (the "demo" text should turn black) and close HxD.</li>
     <li>Now copy this modified EBOOT.ELF into the "tools" folder within the TrueAncestor SELF Resigner folder</li>
     <li>Hold shift and right click in an empty space in the tools folder and choose "Open Powershell window here" or "Open CMD window here"</li>
